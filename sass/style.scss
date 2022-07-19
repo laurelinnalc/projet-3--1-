@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url('/fonts/Roboto-Regular.ttf');
+
+}
+@font-face {
+  font-family: 'Roboto-thin';
+  src: url('/fonts/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto-light' ;
+  src: url('/fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family:'Roboto-medium' ;
+  src: url('/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('/fonts/Shrikhand-Regular.ttf');
+}
+
+
+header {
+    background-color: #fffdfd;
+
+      .logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  }
+
+  .location {
+    i.fa-solid.fa-location-dot {
+      margin-left: 10px;
+    }
+  }
+
+  
+  .location {
+    display: flex;
+    color: #404040;
+    justify-content: center;
+    background-color: #eaeaea;
+    border-top: solid #d5d5d5;
+    font-family: 'Roboto-medium';
+    i {
+      margin-right: 15px;
+    }
+  }
+
+  main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
+    h1 {
+      text-align: center;
+      font-family: 'Roboto-bold';
+      font-size: 1.9em;
+      margin-bottom: 0;
+      padding: 20px 56px 20px 46px; /*top, right, bottom, left*/
+    }
+    h2 {
+      text-align: center;
+      color: #595959;
+      font-family: 'Roboto-thin';
+      font-size: 1.2em;
+      margin-top: 0;
+      padding-bottom: 10px;
+    }
+
+      .button_explore {
+        font-family: 'Roboto-medium';
+
+      background-image: linear-gradient(to right, #FF79DA 0%, #9356DC  51%, #FF79DA  100%);
+      margin: 10px;
+      text-align: center;
+      background-size: 200% auto;
+      color: white;            
+      border-radius: 40px;
+      border :none;
+      padding: 17px;
+      box-shadow: 3px 3px 3px 3px #cfcfcf;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 50px;
+  }
+  }
+
+  aside {    
+    margin-top: 50px;
+    h3 {
+          font-family: 'Roboto-medium';
+          font-size: 1.7em;
+    }
+
+      .button_fonction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    button {
+      font-family: 'Roboto-medium';
+      background-color: #f6f6f6;
+      padding: 20px 2px 20px 2px;
+      border: none;
+      margin: 5px 20px 20px 20px;
+      border-radius: 20px;
+      box-shadow: 3px 3px 7px 3px #eceaea;
+      cursor: pointer;
+
+      p {
+  
+        display: flex;
+        font-size: 1.5em;
+      }
+
+      i {
+        padding-right: 30px;
+        padding-left: 30px;
+        color: #7e7e7e;
+        font-size: 1em;
+      }
+
+    }
+
+:hover {
+      background-color: #f5edff;
+      i {
+        color: #8356dc;
+      }
+      
+    }
+
+    span {
+      display: flex;
+    }
+  }
+
+  }
+
+  section {
+    background-color: #f6f6f6;
+    padding-top: 30px;
+    h3 {
+          font-family: 'Roboto-medium';
+          font-size: 1.7em;
+    }
+    .card_restaurant {
+      padding: 0px 10px 40px 10px;
+      .card_item {
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        h4 {
+          margin-bottom: 0;
+          padding-left: 10px;
+          font-family: 'Roboto-medium';
+          font-size: 1.4em;
+          margin-top: 15px;
+        }
+        p {
+          font-family: 'Roboto-light';
+          margin-bottom: 0;
+          padding-left: 10px;
+          padding-bottom: 15px;
+          font-size: 1.2em;
+          margin-top: 3px;
+        }
+        .card_img {
+          width: 100%;
+          height: 230px; /*à modifier si possible*/
+          object-fit: cover;
+          border-radius: 20px 20px 0px 0px;
+        }
+      }
+    }
+
+  }
+footer {
+  padding-top: 10px;
+  h5 {
+    
+    font-family: 'Shrikhand';
+    font-size: 1.1em;
+    padding-left: 39px;
+    margin-bottom: 0;
+  }
+  background-color: #353535;
+  color: #ffffff;
+  ul {
+      list-style-type: none;
+      li {
+        font-family: 'Roboto-medium';
+        i {
+          padding-right: 10px;
+          font-size: 0.9em;
+        }
+      }
+  }
+
+}
