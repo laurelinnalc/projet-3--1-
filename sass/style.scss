@@ -95,7 +95,8 @@ header {
   }
   }
 
-  aside {    
+  aside {   
+    display: block; 
     margin-top: 50px;
     h3 {
           font-family: 'Roboto-medium';
@@ -115,6 +116,17 @@ header {
       border-radius: 20px;
       box-shadow: 3px 3px 7px 3px #eceaea;
       cursor: pointer;
+
+      .numberorder {
+        background-color: #9356DC;
+        color: #f6f6f6;
+        position: absolute;
+        padding: 5px 10px 5px 10px;
+        border-radius: 41px;
+        margin: 16px 0px 0px -17px;
+
+
+      }        
 
       p {
   
@@ -145,7 +157,7 @@ header {
   }
 
   }
-
+  main {
   section {
     background-color: #f6f6f6;
     padding-top: 30px;
@@ -155,17 +167,53 @@ header {
     }
     .card_restaurant {
       padding: 0px 10px 40px 10px;
+
+      a {
+        text-decoration: none;
+      }
       .card_item {
         background-color: white;
         border-radius: 20px;
         margin-bottom: 20px;
+        position: relative;
+        display: block;
+
+        .card_info {
+          list-style-type: none;
+          text-decoration: none;
+
+        .new {
+          font-family: 'Roboto-medium';
+          position: absolute;
+          top: 13px;
+          right: 8px;
+          color: #008766;
+          background-color: #99e2d0;
+          padding: 8px 10px 8px 10px;
+          border-radius: 3px;
+        }
+
         h4 {
           margin-bottom: 0;
           padding-left: 10px;
           font-family: 'Roboto-medium';
           font-size: 1.4em;
           margin-top: 15px;
+          color: black;
+          i {
+            position: absolute;
+            right: 10%;
+            cursor: pointer;
+
+          }
+          .fa-heart:hover{
+            background-image: linear-gradient(90deg,#9356dc, #FF79DA);
+            background-clip: text;
+            color:transparent;
+            font-weight: bolder; /*le coeur devient violet*/
+          }
         }
+
         p {
           font-family: 'Roboto-light';
           margin-bottom: 0;
@@ -173,8 +221,10 @@ header {
           padding-bottom: 15px;
           font-size: 1.2em;
           margin-top: 3px;
+          color: black;
         }
-        .card_img {
+      }
+        .card_img img {
           width: 100%;
           height: 230px; /*à modifier si possible*/
           object-fit: cover;
@@ -183,6 +233,7 @@ header {
       }
     }
 
+  }
   }
 footer {
   padding-top: 10px;
@@ -199,10 +250,19 @@ footer {
       list-style-type: none;
       li {
         font-family: 'Roboto-medium';
+
         i {
           padding-right: 10px;
           font-size: 0.9em;
         }
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+      li:hover {
+        text-decoration: underline;
+        cursor: pointer;
       }
   }
 

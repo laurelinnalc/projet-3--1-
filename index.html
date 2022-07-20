@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -39,61 +39,90 @@
       <h3>Fonctionnement</h3>
       <div class="button_fonction">
         <button>
+          <div class="numberorder"><span class="number">1</span></div>
           <p>
             <i class="fa-solid fa-mobile-screen-button"></i>Choississez un
             restaurant
           </p>
         </button>
         <button>
+          <div class="numberorder"><span class="number">2</span></div>
           <p><i class="fa-solid fa-list"></i>Composez votre menu</p>
         </button>
         <button>
+          <div class="numberorder"><span class="number">3</span></div>
           <p><i class="fa-solid fa-store"></i>Dégustez au restaurant</p>
         </button>
       </div>
     </aside>
 
-    <section>
-      <h3>Restaurant</h3>
-      <div class="card_restaurant">
-        <div class="card_item">
-          <img
-            class="card_img"
-            src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt=""
-          />
-          <h4>La palette du goût</h4>
-          <p>Ménilmontant</p>
+    <main class="main_content">
+      <section>
+        <h3>Restaurant</h3>
+        <div class="card_restaurant">
+          <div class="card_item">
+            <a href="">
+              <div class="card_img">
+                <img
+                  src="/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card_info">
+                <p class="new">Nouveau</p>
+                <h4>
+                  La palette du goût<i class="fa-regular fa-heart"><i
+                    class="fa-solid fa-heart_animation"
+                  ></i></i
+                  >
+                </h4>
+                <p>Ménilmontant</p>
+              </div>
+            </a>
+          </div>
+          <div class="card_item">
+            <a href="#">
+              <div class="card_img">
+                <img src="/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
+              </div>
+              <div class="card_info">
+                <p class="new">Nouveau</p>
+                <h4>La palette du goût<i class="fa-regular fa-heart"></i></h4>
+                <p>Ménilmontant</p>
+              </div>
+            </a>
+          </div>
+          <div class="card_item">
+            <a href="#">
+              <div class="card_img">
+                <img
+                  src="/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card_info">
+                <h4>La palette du goût<i class="fa-regular fa-heart"></i></h4>
+                <p>Ménilmontant</p>
+              </div>
+            </a>
+          </div>
+          <div class="card_item">
+            <a href="#">
+              <div class="card_img">
+                <img
+                  src="/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card_info">
+                <h4>La palette du goût<i class="fa-regular fa-heart"></i></h4>
+                <p>Ménilmontant</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="card_item">
-          <img
-            class="card_img"
-            src="./images/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt=""
-          />
-          <h4>La note enchantée</h4>
-          <p>Charonne</p>
-        </div>
-        <div class="card_item">
-          <img
-            class="card_img"
-            src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-            alt=""
-          />
-          <h4>À la française</h4>
-          <p>Cité Rouge</p>
-        </div>
-        <div class="card_item">
-          <img
-            class="card_img"
-            src="./images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt=""
-          />
-          <h4>Le délice des sens</h4>
-          <p>Folie-Méricourt</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <h5>ohmyfood</h5>
@@ -102,7 +131,7 @@
         <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
         <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
         <li>Mentions légales</li>
-        <li>Contact</li>
+        <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
       </ul>
     </footer>
   </body>
