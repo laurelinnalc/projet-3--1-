@@ -23,6 +23,9 @@
   font-family: "Shrikhand";
   src: url("/fonts/Shrikhand-Regular.ttf");
 }
+/*FONTS*/
+/*COLORS*/
+/*LOADING SETTINGS*/
 header {
   display: flex;
   justify-content: center;
@@ -222,4 +225,4 @@ footer ul li:hover {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=menu1.css.map */
+/*# sourceMappingURL=alafran%C3%A7aise.css.map */
