@@ -1,10 +1,10 @@
 
 /*MAIN*/
 
-* {
+ * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+   box-sizing: border-box;
 }
 
 @font-face {
@@ -59,12 +59,11 @@ a:visited {
 }
 
 footer {
-    padding-top: 10px;
+  padding: 20px 0 31px 35px;
     h5 {
       
       font-family: 'Shrikhand';
       font-size: 1.1em;
-      padding-left: 39px;
       margin-bottom: 0;
     }
     background-color: #353535;
@@ -76,7 +75,7 @@ footer {
   
           i {
             padding-right: 10px;
-            font-size: 0.9em;
+            font-size: 11px;
           }
           a {
             color: #ffffff;

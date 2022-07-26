@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -56,14 +56,13 @@ a:visited {
 }
 
 footer {
-  padding-top: 10px;
+  padding: 20px 0 31px 35px;
   background-color: #353535;
   color: #ffffff;
 }
 footer h5 {
   font-family: "Shrikhand";
   font-size: 1.1em;
-  padding-left: 39px;
   margin-bottom: 0;
 }
 footer ul {
@@ -74,7 +73,7 @@ footer ul li {
 }
 footer ul li i {
   padding-right: 10px;
-  font-size: 0.9em;
+  font-size: 11px;
 }
 footer ul li a {
   color: #ffffff;
@@ -155,12 +154,15 @@ footer ul li:hover {
   }
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  background-color: #f6f6f6;
 }
 header .return {
   position: absolute;
@@ -202,16 +204,15 @@ header h1 span {
   display: flex;
   background-color: #f6f6f6;
 }
-.container .title_restaurant {
-  display: flex;
-  justify-content: center;
-}
 .container .title_restaurant .menu_title {
   font-family: "Shrikhand";
 }
 .container .title_restaurant .menu_title i.fa-regular.fa-heart {
   padding-left: 25px;
   font-size: 0.9em;
+  position: absolute;
+  right: 45px;
+  top: 31px;
 }
 .container .title_restaurant .menu_title .fa-heart:hover {
   background-image: linear-gradient(90deg, #9356dc, #FF79DA);
@@ -227,6 +228,8 @@ header h1 span {
   position: relative;
   width: 100%;
   top: -30px;
+  margin-top: 5px;
+  padding: 24px 20px 0px 20px;
 }
 .container main section {
   display: block;
@@ -239,7 +242,9 @@ header h1 span {
   padding-bottom: 5px;
   width: 45px;
   font-family: "Roboto-light";
-  font-size: 1.1em;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 45px;
 }
 .container main section .menu .bloc_element { /*contrôle les blocs menus*/
   display: block;
@@ -255,6 +260,11 @@ header h1 span {
   /*transform: scale(0);
   animation-fill-mode: both;*/
 }
+.container main section .menu .bloc_element .bloc__content {
+  border-radius: 15px;
+  padding: 10px 0px 0px 10px;
+  margin-bottom: 15px;
+}
 .container main section .menu .bloc_element .bloc__content__side {
   position: relative;
   box-sizing: border-box;
@@ -262,11 +272,14 @@ header h1 span {
 .container main section .menu .bloc_element .bloc__content__title {
   font-family: "Roboto-regular";
   font-weight: 1em;
+  font-size: 16px;
+  padding-top: 5px;
 }
 .container main section .menu .bloc_element .bloc__content__details {
   font-family: "Roboto-light";
   display: flex;
   padding-top: 4px;
+  font-size: 15px;
 }
 .container main section .menu .bloc_element .bloc__content__info {
   text-overflow: ellipsis;
@@ -277,6 +290,8 @@ header h1 span {
 .container main section .menu .bloc_element .bloc__content__price {
   position: absolute;
   right: 5px;
+  font-family: "Roboto-bold";
+  padding-right: 12px;
 }
 .container main section .menu .bloc_element .bloc__check {
   background: #99E2D0;
@@ -296,61 +311,26 @@ header h1 span {
   width: 100%;
 }
 
-button {
+.button__buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.button__buy button {
   background-image: linear-gradient(90deg, #9356dc, #FF79DA);
   border: none;
-  border-radius: 18px;
-  height: 35px;
-  width: 225px;
+  border-radius: 38px;
+  height: 46px;
+  width: 163px;
   box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.1803921569);
-  display: block;
 }
-
-.button__title {
+.button__buy button .button__title {
   color: white;
   text-align: center;
+  font-weight: bold;
 }
-
-button:hover {
-  cursor: pointer;
-  opacity: 1;
-  animation-duration: 1.5s;
-  animation-play-state: running;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
-footer {
-  padding-top: 10px;
-  background-color: #353535;
-  color: #ffffff;
-}
-footer h5 {
-  font-family: "Shrikhand";
-  font-size: 1.1em;
-  padding-left: 39px;
-  margin-bottom: 0;
-}
-footer ul {
-  list-style-type: none;
-}
-footer ul li {
-  font-family: "Roboto-medium";
-}
-footer ul li i {
-  padding-right: 10px;
-  font-size: 0.9em;
-}
-footer ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer ul li:hover {
-  text-decoration: underline;
+.button__buy button:hover {
   cursor: pointer;
 }
 
