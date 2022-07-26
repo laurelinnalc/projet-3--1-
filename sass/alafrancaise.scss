@@ -7,10 +7,10 @@
     height: 100vh;
     inset: 0;
     z-index: 1;
-    animation: disappear 3s;
+    animation: disappear 0.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    transform-origin: top;
+    transform-origin: bottom right 60px;
     display: flex;
     align-items: center;
     justify-content: center;
