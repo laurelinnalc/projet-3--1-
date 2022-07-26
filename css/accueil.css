@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*MAIN*/
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
 @font-face {
   font-family: "Roboto-regular";
   src: url("/fonts/Roboto-Regular.ttf");
@@ -23,6 +30,61 @@
   font-family: "Shrikhand";
   src: url("/fonts/Shrikhand-Regular.ttf");
 }
+body {
+  /*background-color: #99E2D0;*/
+  font-family: "Roboto-regular";
+}
+
+/*BLOC AND INSIDE BLOC*/
+.bloc__content {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
+footer {
+  padding-top: 10px;
+  background-color: #353535;
+  color: #ffffff;
+}
+footer h5 {
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  padding-left: 39px;
+  margin-bottom: 0;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  font-family: "Roboto-medium";
+}
+footer ul li i {
+  padding-right: 10px;
+  font-size: 0.9em;
+}
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 header {
   background-color: #fffdfd;
 }
