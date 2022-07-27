@@ -84,6 +84,14 @@ footer ul li:hover {
   cursor: pointer;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .loader {
   position: fixed;
   background-color: #ffffff;
@@ -171,7 +179,7 @@ header .return {
   max-width: 1440px;
 }
 header i {
-  margin-top: 55px;
+  margin-top: 33px;
   color: rgb(15, 11, 2);
   font-size: 1.8em;
 }
@@ -215,7 +223,7 @@ header h1 span {
   top: 31px;
 }
 .container .title_restaurant .menu_title .fa-heart:hover {
-  background-image: linear-gradient(90deg, #9356dc, #FF79DA);
+  background-image: linear-gradient(90deg, #9356dc, #ff79da);
   background-clip: text;
   color: transparent;
   font-weight: bolder; /*le coeur devient violet*/
@@ -238,7 +246,7 @@ header h1 span {
   border: 0;
 }
 .container main section .menu .menu_title {
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   padding-bottom: 5px;
   width: 45px;
   font-family: "Roboto-light";
@@ -246,7 +254,8 @@ header h1 span {
   margin-bottom: 20px;
   margin-top: 45px;
 }
-.container main section .menu .bloc_element { /*contrôle les blocs menus*/
+.container main section .menu .bloc_element {
+  /*contrôle les blocs menus*/
   display: block;
   background-color: white;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1803921569);
@@ -255,10 +264,38 @@ header h1 span {
   margin-left: auto;
   margin-top: 5px;
   position: relative;
-  animation-duration: 1s;
-  animation-name: appear;
+  animation: 3s appear 2s;
+  /*animation-duration: 1s;
+  animation-name: appear;*/
   /*transform: scale(0);
-  animation-fill-mode: both;*/
+    animation-fill-mode: both;*/
+}
+.container main section .menu .bloc_element:nth-child(1) {
+  animation-delay: 5s;
+}
+.container main section .menu .bloc_element:nth-child(2) {
+  animation-delay: 10s;
+}
+.container main section .menu .bloc_element:nth-child(3) {
+  animation-delay: 15s;
+}
+.container main section .menu .bloc_element:nth-child(4) {
+  animation-delay: 20s;
+}
+.container main section .menu .bloc_element:nth-child(5) {
+  animation-delay: 25s;
+}
+.container main section .menu .bloc_element:nth-child(6) {
+  animation-delay: 30s;
+}
+.container main section .menu .bloc_element:nth-child(7) {
+  animation-delay: 35s;
+}
+.container main section .menu .bloc_element:nth-child(8) {
+  animation-delay: 40s;
+}
+.container main section .menu .bloc_element:nth-child(9) {
+  animation-delay: 45s;
 }
 .container main section .menu .bloc_element .bloc__content {
   border-radius: 15px;
@@ -294,7 +331,7 @@ header h1 span {
   padding-right: 12px;
 }
 .container main section .menu .bloc_element .bloc__check {
-  background: #99E2D0;
+  background: #99e2d0;
   height: 100%;
   width: 0px;
   display: flex;
@@ -318,12 +355,15 @@ header h1 span {
   margin-bottom: 90px;
 }
 .button__buy button {
-  background-image: linear-gradient(90deg, #9356dc, #FF79DA);
+  background-image: linear-gradient(90deg, #9356dc, #ff79da);
   border: none;
   border-radius: 38px;
   height: 46px;
   width: 163px;
-  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.1803921569);
+  /*box-shadow: 4px 5px 6px #0000002E;*/
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 .button__buy button .button__title {
   color: white;
@@ -332,6 +372,7 @@ header h1 span {
 }
 .button__buy button:hover {
   cursor: pointer;
+  transform: translate(0, -6px);
 }
 
 /*# sourceMappingURL=alafrancaise.css.map */

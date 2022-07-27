@@ -84,6 +84,14 @@ footer ul li:hover {
   cursor: pointer;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 header {
   background-color: #fffdfd;
 }
@@ -150,10 +158,15 @@ main .button__selection__explore {
   border-radius: 40px;
   border: none;
   padding: 17px;
-  box-shadow: 3px 3px 3px 3px #cfcfcf;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1803921569);
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+main .button__selection__explore:hover {
+  cursor: pointer;
+  transform: translate(0, -6px);
 }
 
 aside {

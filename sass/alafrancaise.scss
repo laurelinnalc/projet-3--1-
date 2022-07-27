@@ -1,269 +1,285 @@
 @use "_site-base.scss";
 
-   .loader {
-    position: fixed;
-    background-color: #ffffff;
-    opacity: 0.9;
-    height: 100vh;
-    inset: 0;
-    z-index: 1;
-    animation: disappear 0.5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    transform-origin: bottom right 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.loader {
+  position: fixed;
+  background-color: #ffffff;
+  opacity: 0.9;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 0.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transform-origin: bottom right 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @keyframes disappear {
-      to {
-        transform: scale(0);
-      }
-      
+  @keyframes disappear {
+    to {
+      transform: scale(0);
     }
-    .spinner {
-      width: 100px;
-      height: 100px;
-      position: relative;
-      animation: 3s;
-  
-      div {
-        box-sizing: border-box;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 10px solid transparent;
-        border-top-color: #9356dc;
-        border-radius: 50%;
-        animation: spinnerOne 1.2s linear infinite;
+  }
+  .spinner {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: 3s;
+
+    div {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 10px solid transparent;
+      border-top-color: #9356dc;
+      border-radius: 50%;
+      animation: spinnerOne 1.2s linear infinite;
+    }
+    div:nth-child(2) {
+      border: 8px solid transparent;
+      border-bottom-color: #9356dc;
+      animation: spinnerTwo 1.2s linear infinite;
+    }
+
+    @keyframes spinnerOne {
+      0% {
+        transform: rotate(0deg);
+        border-width: 10px;
       }
-      div:nth-child(2) {
-        border: 8px solid transparent;
-        border-bottom-color: #9356dc;
-        animation: spinnerTwo 1.2s linear infinite;
+      50% {
+        transform: rotate(180deg);
+        border-width: 1px;
       }
-  
-      @keyframes spinnerOne {
-        0% {transform: rotate(0deg); border-width: 10px;}
-        50% {transform: rotate(180deg); border-width: 1px;}
-        100% {transform: rotate(360deg); border-width: 10px;}
-      }
-      @keyframes spinnerTwo {
-        0% {transform: rotate(0deg); border-width: 1px;}
-        50% {transform: rotate(180deg); border-width: 10px;}
-        100% {transform: rotate(360deg); border-width: 1px;}
+      100% {
+        transform: rotate(360deg);
+        border-width: 10px;
       }
     }
-  
-   }
-  
+    @keyframes spinnerTwo {
+      0% {
+        transform: rotate(0deg);
+        border-width: 1px;
+      }
+      50% {
+        transform: rotate(180deg);
+        border-width: 10px;
+      }
+      100% {
+        transform: rotate(360deg);
+        border-width: 1px;
+      }
+    }
+  }
+}
+
 body {
   background-color: #f6f6f6;
 }
-  
-  header {
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+
+  .return {
+    position: absolute;
+    left: 20px;
+    top: -13px;
+    max-width: 1440px;
+  }
+
+  i {
+    margin-top: 33px;
+    color: rgb(15, 11, 2);
+    font-size: 1.8em;
+  }
+  h1 {
+    font-family: "Shrikhand";
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    position: relative;
-  
-    .return {
-      position: absolute;
-      left: 20px;
-      top: -13px;
-      max-width: 1440px;
-    }
-  
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
 
-    i {
-      margin-top: 55px;
-      color: rgb(15, 11, 2);
-      font-size: 1.8em;
-    }
-    h1 {
-      font-family: "Shrikhand";
+    span {
       display: flex;
-      justify-content: center;
-      padding-bottom: 20px;
-      padding-top: 10px;
-      margin-bottom: 0;
-      cursor: pointer;
-  
-      span {
-        display: flex;
+    }
+  }
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  .cover_img {
+    width: 100%;
+    object-fit: cover;
+    height: 46vh;
+  }
+}
+
+/*CONTAINER*/
+
+.container {
+  display: flex;
+  background-color: #f6f6f6;
+
+  .title_restaurant {
+    .menu_title {
+      font-family: "Shrikhand";
+
+      i.fa-regular.fa-heart {
+        padding-left: 25px;
+        font-size: 0.9em;
+        position: absolute;
+        right: 45px;
+        top: 31px;
+      }
+      .fa-heart:hover {
+        background-image: linear-gradient(90deg, #9356dc, #ff79da);
+        background-clip: text;
+        color: transparent;
+        font-weight: bolder; /*le coeur devient violet*/
+        cursor: pointer;
       }
     }
   }
-  
-  .cover {
-    display: flex;
-    justify-content: center;
-    background-color: aquamarine;
-    .cover_img {
-      width: 100%;
-      object-fit: cover;
-      height: 46vh;
-    }
-  }
-  
-  /*CONTAINER*/
-  
-  .container {
-    display: flex;
+
+  main {
     background-color: #f6f6f6;
-  
-    .title_restaurant {
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    top: -30px;
+    margin-top: 5px;
+    padding: 24px 20px 0px 20px;
+
+    section {
+      display: block;
+      .menu {
+        border: 0;
         .menu_title {
-          font-family: "Shrikhand";
-  
-        i.fa-regular.fa-heart {
-          padding-left: 25px;
-          font-size: 0.9em;
-          position: absolute;
-          right: 45px;
-          top: 31px;
-  
+          border-bottom: 3px solid #99e2d0;
+          padding-bottom: 5px;
+          width: 45px;
+          font-family: "Roboto-light";
+          font-size: 14px;
+          margin-bottom: 20px;
+          margin-top: 45px;
+          
         }
-        .fa-heart:hover{
-          background-image: linear-gradient(90deg,#9356dc, #FF79DA);
-          background-clip: text;
-          color:transparent;
-          font-weight: bolder; /*le coeur devient violet*/
-          cursor: pointer;
-        }
-      
-    }
-  
-    }
-  
-    main {
-      background-color: #f6f6f6;
-      border-radius: 30px 30px 0px 0px;
-      width: 100%;
-      position: relative;
-      width: 100%;
-      top: -30px;
-      margin-top: 5px;
-      padding: 24px 20px 0px 20px;
-  
-      section {
-        display: block;
-        .menu {
-          border: 0;
-          .menu_title {
-            border-bottom: 3px solid #99E2D0;
-            padding-bottom: 5px;
-            width: 45px;
-            font-family: 'Roboto-light';
-            font-size: 14px;
-            margin-bottom: 20px;
-            margin-top: 45px;
-            
+        
+
+        .bloc_element {
+          /*contrôle les blocs menus*/
+          display: block;
+          background-color: white;
+          box-shadow: 0px 5px 15px #0000002e;
+          border-radius: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 5px;
+          position: relative;
+          animation: 3s appear 2s;
+          @for $i from 1 through 9 {
+            &:nth-child(#{$i}) {
+              animation-delay:  5s * $i;
+            }
           }
-  
-          .bloc_element {       /*contrôle les blocs menus*/   
-            display: block;
-            background-color: white;
-            box-shadow: 0px 5px 15px #0000002E;
-            border-radius: 15px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 5px;
-            position: relative;
-            animation-duration: 1s;
-            animation-name: appear;
-            /*transform: scale(0);
+          /*animation-duration: 1s;
+          animation-name: appear;*/
+          /*transform: scale(0);
             animation-fill-mode: both;*/
-  
-            .bloc__content {
-              border-radius: 15px;
-              padding: 10px 0px 0px 10px;
-              margin-bottom: 15px;
-              &__side {  
-                position: relative;
-                box-sizing: border-box;
-  
-              }             
-               &__title {
-              font-family: 'Roboto-regular';
+
+          .bloc__content {
+            border-radius: 15px;
+            padding: 10px 0px 0px 10px;
+            margin-bottom: 15px;
+
+
+
+            &__side {
+              position: relative;
+              box-sizing: border-box;
+            }
+            &__title {
+              font-family: "Roboto-regular";
               font-weight: 1em;
               font-size: 16px;
               padding-top: 5px;
-             }
-             &__details {
-              font-family: 'Roboto-light';
+            }
+            &__details {
+              font-family: "Roboto-light";
               display: flex;
               padding-top: 4px;
               font-size: 15px;
-             }
-             &__info {
+            }
+            &__info {
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden;
               width: 80%;
-             }
-             &__price {
+            }
+            &__price {
               position: absolute;
               right: 5px;
-              font-family: 'Roboto-bold';
+              font-family: "Roboto-bold";
               padding-right: 12px;
-             }
-  
             }
-            .bloc__check {            
-              background: #99E2D0;
-              height: 100%;
-              width: 0px;
-              display: flex;
-              align-items: center;
-              overflow: hidden;
-            
-              transition: all 0.3s ease;
-            }
-            .fa-check-circle::before {
-              font-family: "FontAwesome";
-              content: "\f058";
-              display: block;
-            }
-            .fa-check-circle:hover::before {
-              width: 100%;
-             
-            }
-        }
+          }
+          .bloc__check {
+            background: #99e2d0;
+            height: 100%;
+            width: 0px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            transition: all 0.3s ease;
+          }
+          .fa-check-circle::before {
+            font-family: "FontAwesome";
+            content: "\f058";
+            display: block;
+          }
+          .fa-check-circle:hover::before {
+            width: 100%;
+          }
         }
       }
     }
   }
-      
-  
-  .button__buy {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 90px;
+}
+
+.button__buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
 
   button {
-    background-image: linear-gradient(90deg,#9356dc, #FF79DA);
+    background-image: linear-gradient(90deg, #9356dc, #ff79da);
     border: none;
     border-radius: 38px;
     height: 46px;
     width: 163px;
-    box-shadow: 4px 5px 6px #0000002E;
+    /*box-shadow: 4px 5px 6px #0000002E;*/
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 
-
-   
-      .button__title {
-      color:white;
-      text-align: center;  
+    .button__title {
+      color: white;
+      text-align: center;
       font-weight: bold;
-      
-
-    }  
     }
-    button:hover {
-    cursor: pointer;
-
   }
-
-  
- }
+  button:hover {
+    cursor: pointer;
+    transform: translate(0, -6px);
+  }
+}

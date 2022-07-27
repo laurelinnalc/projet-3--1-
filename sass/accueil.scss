@@ -71,11 +71,16 @@ header {
       border-radius: 40px;
       border :none;
       padding: 17px;
-      box-shadow: 3px 3px 3px 3px #cfcfcf;
+      box-shadow: 0px 5px 15px #0000002E;
       margin-left: 100px;
       margin-right: 100px;
       margin-bottom: 50px;
+      transition: transform 0.3s ease;
   }
+  }
+  .button__selection__explore:hover {
+    cursor: pointer;
+    transform: translate(0, -6px);
   }
 }
 
