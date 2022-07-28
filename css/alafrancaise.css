@@ -92,6 +92,14 @@ footer ul li:hover {
     transform: scale(1);
   }
 }
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .loader {
   position: fixed;
   background-color: #ffffff;
@@ -100,7 +108,7 @@ footer ul li:hover {
   inset: 0;
   z-index: 1;
   animation: disappear 0.5s;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
   transform-origin: bottom right 60px;
   display: flex;
@@ -116,7 +124,7 @@ footer ul li:hover {
   width: 100px;
   height: 100px;
   position: relative;
-  animation: 3s;
+  animation: 2.5s;
 }
 .loader .spinner div {
   box-sizing: border-box;
@@ -241,37 +249,38 @@ header h1 span {
 }
 .container main section {
   display: block;
+  overflow: hidden;
+  animation-delay: 3s;
+}
+.container main section .bloc_element.menu1 {
+  animation: 1s appear 0.2s;
+}
+.container main section .bloc_element.menu2 {
+  animation: 1s appear 0.4s;
+}
+.container main section .bloc_element.menu3 {
+  animation: 1s appear 0.6s;
+}
+.container main section .bloc_element.menu4 {
+  animation: 1s appear 0.8s;
+}
+.container main section .bloc_element.menu5 {
+  animation: 1s appear 1s;
+}
+.container main section .bloc_element.menu6 {
+  animation: 1s appear 1.2s;
+}
+.container main section .bloc_element.menu7 {
+  animation: 1s appear 1.4s;
+}
+.container main section .bloc_element.menu8 {
+  animation: 1s appear 1.6s;
+}
+.container main section .bloc_element.menu9 {
+  animation: 1s appear 1.8s;
 }
 .container main section .menu {
   border: 0;
-  animation: 3s appear 2s;
-}
-.container main section .menu:nth-child(1) {
-  animation-delay: 3s;
-}
-.container main section .menu:nth-child(2) {
-  animation-delay: 6s;
-}
-.container main section .menu:nth-child(3) {
-  animation-delay: 9s;
-}
-.container main section .menu:nth-child(4) {
-  animation-delay: 12s;
-}
-.container main section .menu:nth-child(5) {
-  animation-delay: 15s;
-}
-.container main section .menu:nth-child(6) {
-  animation-delay: 18s;
-}
-.container main section .menu:nth-child(7) {
-  animation-delay: 21s;
-}
-.container main section .menu:nth-child(8) {
-  animation-delay: 24s;
-}
-.container main section .menu:nth-child(9) {
-  animation-delay: 27s;
 }
 .container main section .menu .menu_title {
   border-bottom: 3px solid #99e2d0;
@@ -303,10 +312,6 @@ header h1 span {
   padding: 10px 0px 0px 10px;
   margin-bottom: 15px;
 }
-.container main section .menu .bloc_element .bloc__content__side {
-  position: relative;
-  box-sizing: border-box;
-}
 .container main section .menu .bloc_element .bloc__content__title {
   font-family: "Roboto-regular";
   font-weight: 1em;
@@ -326,27 +331,64 @@ header h1 span {
   width: 80%;
 }
 .container main section .menu .bloc_element .bloc__content__price {
-  position: absolute;
-  right: 5px;
+  margin-left: auto;
   font-family: "Roboto-bold";
   padding-right: 12px;
-}
-.container main section .menu .bloc_element .bloc__check {
-  background: #99e2d0;
-  height: 100%;
-  width: 0px;
   display: flex;
   align-items: center;
+}
+.container main section .menu .bloc_element .bloc__check {
+  display: flex;
+  background: #99e2d0;
+  margin-left: auto;
+  align-items: center;
+  /*overflow: hidden;*/
+  /*transition: all 0.3s ease;*/
+}
+.container main section .menus__category {
+  background-color: white;
+  border-radius: 1rem; /*changer en px*/
+}
+.container main section .menus__category .menu-item {
+  display: flex;
   overflow: hidden;
-  transition: all 0.3s ease;
 }
-.container main section .menu .bloc_element .fa-check-circle::before {
-  font-family: "FontAwesome";
-  content: "\f058";
-  display: block;
+.container main section .menus__category .menu-item .menu-item__price {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 1rem; /*changer en px*/
+  display: flex;
+  align-items: flex-end;
 }
-.container main section .menu .bloc_element .fa-check-circle:hover::before {
-  width: 100%;
+.container main section .menus__category .menu-item .menu-item__description {
+  padding: 1rem;
+}
+.container main section .menus__category .menu-item .menu-item__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*changer en px*/
+  background-color: #99e2d0;
+  margin-right: -4rem; /*changer en px*/
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0; /*changer en px*/
+  transition: margin-right 0.5s;
+}
+.container main section .menus__category .menu-item .menu-item__check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+.container main section .menus__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+.container main section .menus__category .menu-item:hover i {
+  animation: quarterspin 0.5s ease-in-out;
 }
 
 .button__buy {
