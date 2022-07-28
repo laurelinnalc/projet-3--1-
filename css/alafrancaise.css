@@ -244,6 +244,34 @@ header h1 span {
 }
 .container main section .menu {
   border: 0;
+  animation: 3s appear 2s;
+}
+.container main section .menu:nth-child(1) {
+  animation-delay: 3s;
+}
+.container main section .menu:nth-child(2) {
+  animation-delay: 6s;
+}
+.container main section .menu:nth-child(3) {
+  animation-delay: 9s;
+}
+.container main section .menu:nth-child(4) {
+  animation-delay: 12s;
+}
+.container main section .menu:nth-child(5) {
+  animation-delay: 15s;
+}
+.container main section .menu:nth-child(6) {
+  animation-delay: 18s;
+}
+.container main section .menu:nth-child(7) {
+  animation-delay: 21s;
+}
+.container main section .menu:nth-child(8) {
+  animation-delay: 24s;
+}
+.container main section .menu:nth-child(9) {
+  animation-delay: 27s;
 }
 .container main section .menu .menu_title {
   border-bottom: 3px solid #99e2d0;
@@ -253,6 +281,7 @@ header h1 span {
   font-size: 14px;
   margin-bottom: 20px;
   margin-top: 45px;
+  text-transform: uppercase;
 }
 .container main section .menu .bloc_element {
   /*contrôle les blocs menus*/
@@ -264,38 +293,10 @@ header h1 span {
   margin-left: auto;
   margin-top: 5px;
   position: relative;
-  animation: 3s appear 2s;
   /*animation-duration: 1s;
   animation-name: appear;*/
   /*transform: scale(0);
     animation-fill-mode: both;*/
-}
-.container main section .menu .bloc_element:nth-child(1) {
-  animation-delay: 5s;
-}
-.container main section .menu .bloc_element:nth-child(2) {
-  animation-delay: 10s;
-}
-.container main section .menu .bloc_element:nth-child(3) {
-  animation-delay: 15s;
-}
-.container main section .menu .bloc_element:nth-child(4) {
-  animation-delay: 20s;
-}
-.container main section .menu .bloc_element:nth-child(5) {
-  animation-delay: 25s;
-}
-.container main section .menu .bloc_element:nth-child(6) {
-  animation-delay: 30s;
-}
-.container main section .menu .bloc_element:nth-child(7) {
-  animation-delay: 35s;
-}
-.container main section .menu .bloc_element:nth-child(8) {
-  animation-delay: 40s;
-}
-.container main section .menu .bloc_element:nth-child(9) {
-  animation-delay: 45s;
 }
 .container main section .menu .bloc_element .bloc__content {
   border-radius: 15px;

@@ -160,8 +160,16 @@ header {
 
     section {
       display: block;
+
       .menu {
-        border: 0;
+        border: 0;          
+        animation: 3s appear 2s;
+          @for $i from 1 through 9 {
+            &:nth-child(#{$i}) {
+              animation-delay: 3s * $i;
+            }
+          }
+
         .menu_title {
           border-bottom: 3px solid #99e2d0;
           padding-bottom: 5px;
@@ -170,7 +178,7 @@ header {
           font-size: 14px;
           margin-bottom: 20px;
           margin-top: 45px;
-          
+          text-transform: uppercase;
         }
         
 
@@ -184,16 +192,12 @@ header {
           margin-left: auto;
           margin-top: 5px;
           position: relative;
-          animation: 3s appear 2s;
-          @for $i from 1 through 9 {
-            &:nth-child(#{$i}) {
-              animation-delay:  5s * $i;
-            }
-          }
+
           /*animation-duration: 1s;
           animation-name: appear;*/
           /*transform: scale(0);
             animation-fill-mode: both;*/
+
 
           .bloc__content {
             border-radius: 15px;
