@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*MAIN*/
 * {
   margin: 0;
@@ -286,7 +287,7 @@ header h1 span {
   padding-bottom: 5px;
   width: 45px;
   font-family: "Roboto-light";
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 20px;
   margin-top: 45px;
   text-transform: uppercase;
@@ -294,11 +295,14 @@ header h1 span {
 .container main section .menu .bloc__content {
   background-color: white;
   border-radius: 1rem; /*changer en px*/
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 .container main section .menu .bloc__content__item {
   display: flex;
   overflow: hidden;
-  margin-bottom: 15px;
+  white-space: nowrap; /*Force le texte à rester sur une ligne*/
+  text-overflow: ellipsis;
 }
 .container main section .menu .bloc__content__price {
   margin-left: auto;
@@ -309,11 +313,20 @@ header h1 span {
 }
 .container main section .menu .bloc__content__details {
   padding: 1rem;
+  overflow: hidden;
+}
+.container main section .menu .bloc__content__details h4, .container main section .menu .bloc__content__details p {
+  overflow: hidden;
+  white-space: nowrap; /*Force le texte à rester sur une ligne*/
+  text-overflow: ellipsis;
 }
 .container main section .menu .bloc__content__details h4 {
   font-family: "Roboto-medium";
   font-size: 18px;
   margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .container main section .menu .bloc__content__details p {
   font-family: "Roboto-light";
@@ -329,6 +342,7 @@ header h1 span {
   width: 4rem;
   border-radius: 0 1rem 1rem 0; /*changer en px*/
   transition: margin-right 0.5s;
+  flex-shrink: 0;
 }
 .container main section .menu .bloc__content__check i {
   display: flex;
@@ -369,6 +383,7 @@ header h1 span {
   color: white;
   text-align: center;
   font-weight: bold;
+  font-size: 15px;
 }
 .button__buy button:hover {
   cursor: pointer;
