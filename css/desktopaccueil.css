@@ -1,0 +1,39 @@
+aside h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+aside .button_fonction {
+  flex-direction: row;
+}
+aside p {
+  padding-right: 30px;
+}
+
+section h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+section .card_restaurant {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section .card_restaurant .card_item {
+  display: flex;
+  width: 35%;
+  margin-right: 30px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer h5 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=desktopaccueil.css.map */
