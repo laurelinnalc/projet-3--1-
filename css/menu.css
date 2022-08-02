@@ -296,6 +296,7 @@ header h1 span {
   border-radius: 1rem; /*changer en px*/
   overflow: hidden;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .container main section .menu .bloc__content__item {
   display: flex;

@@ -194,6 +194,7 @@ header {
           border-radius: 1rem; /*changer en px*/
           overflow: hidden;
           margin-bottom: 15px;
+          cursor: pointer;
           &__item {
             display: flex;
             overflow: hidden;
