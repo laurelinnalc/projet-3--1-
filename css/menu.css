@@ -124,7 +124,7 @@ footer ul li:hover {
   width: 100px;
   height: 100px;
   position: relative;
-  animation: 2.5s;
+  animation: 2s;
 }
 .loader .spinner div {
   box-sizing: border-box;
@@ -178,7 +178,9 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 header .return {
   position: absolute;
@@ -252,31 +254,31 @@ header h1 span {
   animation-delay: 3s;
 }
 .container main section .bloc_element.menu1 {
-  animation: 1s appear 0.2s;
+  animation: 1s appear 1.7s;
 }
 .container main section .bloc_element.menu2 {
-  animation: 1s appear 0.4s;
+  animation: 1s appear 1.9s;
 }
 .container main section .bloc_element.menu3 {
-  animation: 1s appear 0.6s;
+  animation: 1s appear 2.1s;
 }
 .container main section .bloc_element.menu4 {
-  animation: 1s appear 0.8s;
+  animation: 1s appear 2.3s;
 }
 .container main section .bloc_element.menu5 {
-  animation: 1s appear 1s;
+  animation: 1s appear 2.5s;
 }
 .container main section .bloc_element.menu6 {
-  animation: 1s appear 1.2s;
+  animation: 1s appear 2.7s;
 }
 .container main section .bloc_element.menu7 {
-  animation: 1s appear 1.4s;
+  animation: 1s appear 2.9s;
 }
 .container main section .bloc_element.menu8 {
-  animation: 1s appear 1.6s;
+  animation: 1s appear 3.1s;
 }
 .container main section .bloc_element.menu9 {
-  animation: 1s appear 1.8s;
+  animation: 1s appear 3.3s;
 }
 .container main section .menu {
   border: 0;

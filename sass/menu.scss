@@ -9,6 +9,7 @@
   }
 }
 
+
 .loader {
   position: fixed;
   background-color: #ffffff;
@@ -28,12 +29,13 @@
     to {
       transform: scale(0);
     }
-  }
+  }    
   .spinner {
     width: 100px;
     height: 100px;
     position: relative;
-    animation: 2.5s;
+
+    animation: 2s;
 
     div {
       box-sizing: border-box;
@@ -90,7 +92,9 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: white;
 
   .return {
     position: absolute;
@@ -172,7 +176,7 @@ header {
       animation-delay: 3s;
       @for $i from 1 through 9 {
         .bloc_element.menu#{$i} {
-          animation: 1s appear 0.2s * $i;
+          animation: 1s appear (1.5s + (0.2s * $i));
         }
       }
 
