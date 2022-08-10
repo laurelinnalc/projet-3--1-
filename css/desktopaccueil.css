@@ -6,6 +6,12 @@ aside h3 {
 aside .button_fonction {
   flex-direction: row;
 }
+aside .button_fonction button .numberorder {
+  margin: 0px 0px 0px -17px;
+}
+aside .button_fonction button p span {
+  font-size: 0.7em;
+}
 aside p {
   padding-right: 30px;
 }
@@ -29,8 +35,9 @@ section .card_restaurant .card_item {
 
 footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  align-content: space-around;
 }
 footer h5 {
   font-size: 20px;

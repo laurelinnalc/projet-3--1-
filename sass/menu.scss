@@ -1,6 +1,6 @@
 @use "_site-base.scss";
 
-@keyframes quarterspin {
+@keyframes quarterspin { /*rotate check point*/
   0% {
     transform: rotate(-270deg);
   }
@@ -10,79 +10,7 @@
 }
 
 
-.loader {
-  position: fixed;
-  background-color: #ffffff;
-  opacity: 0.9;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  animation: disappear 0.5s;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-  transform-origin: bottom right 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  @keyframes disappear {
-    to {
-      transform: scale(0);
-    }
-  }    
-  .spinner {
-    width: 100px;
-    height: 100px;
-    position: relative;
-
-    animation: 2s;
-
-    div {
-      box-sizing: border-box;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 10px solid transparent;
-      border-top-color: #9356dc;
-      border-radius: 50%;
-      animation: spinnerOne 1.2s linear infinite;
-    }
-    div:nth-child(2) {
-      border: 8px solid transparent;
-      border-bottom-color: #9356dc;
-      animation: spinnerTwo 1.2s linear infinite;
-    }
-
-    @keyframes spinnerOne {
-      0% {
-        transform: rotate(0deg);
-        border-width: 10px;
-      }
-      50% {
-        transform: rotate(180deg);
-        border-width: 1px;
-      }
-      100% {
-        transform: rotate(360deg);
-        border-width: 10px;
-      }
-    }
-    @keyframes spinnerTwo {
-      0% {
-        transform: rotate(0deg);
-        border-width: 1px;
-      }
-      50% {
-        transform: rotate(180deg);
-        border-width: 10px;
-      }
-      100% {
-        transform: rotate(360deg);
-        border-width: 1px;
-      }
-    }
-  }
-}
 
 body {
   background-color: #f6f6f6;
@@ -153,11 +81,21 @@ header {
       }
       .fa-heart:hover {
         background-image: linear-gradient(90deg, #9356dc, #ff79da);
+        animation: AnimationName 2s ease;
         background-clip: text;
         color: transparent;
         font-weight: bolder; /*le coeur devient violet*/
         cursor: pointer;
       }
+
+      @keyframes AnimationName {
+        0%{opacity: 0.2}
+        20%{opacity: 0.6}
+        50%{opacity: 1.3}
+        70%{opacity: 2}
+        100%{opacity: 4}
+    }
+
     }
   }
 
@@ -176,7 +114,7 @@ header {
       animation-delay: 3s;
       @for $i from 1 through 9 {
         .bloc_element.menu#{$i} {
-          animation: 1s appear (1.5s + (0.2s * $i));
+          animation: 0.9s appear (0.2s * $i);
         }
       }
 

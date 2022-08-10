@@ -1,45 +1,53 @@
 aside {
-    h3 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .button_fonction {
+    flex-direction: row;
+
+    button {
+      .numberorder {
+        margin: 0px 0px 0px -17px;
+      }
+
+      p span {
+        font-size: 0.7em;
+      }
     }
-    .button_fonction {
-        flex-direction: row;
-        
-    }
-    p {
-         padding-right: 30px;
-    }
-   
+  }
+  p {
+    padding-right: 30px;
+  }
 }
 section {
-    h3 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-    .card_restaurant {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .card_restaurant {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-        .card_item {
-            display: flex;
-            width: 35%;
-            margin-right: 30px;
-        }
+    .card_item {
+      display: flex;
+      width: 35%;
+      margin-right: 30px;
     }
+  }
 }
 
 footer {
-    h5 {
-        font-size: 20px;
-       
-    }
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
+  h5 {
+    font-size: 20px;
+  }
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: space-around;
 
 }

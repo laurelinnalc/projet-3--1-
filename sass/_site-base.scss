@@ -63,8 +63,8 @@ footer {
     h5 {
       
       font-family: 'Shrikhand';
-      font-size: 1.1em;
-      margin-bottom: 0;
+      font-size: 1.3em;
+      margin: 5px 0 15px 0 ;
     }
     background-color: #353535;
     color: #ffffff;
@@ -72,9 +72,10 @@ footer {
         list-style-type: none;
         li {
           font-family: 'Roboto-medium';
+          padding-bottom: 5px;
   
           i {
-            padding-right: 10px;
+            padding-right: 5px;
             font-size: 11px;
           }
           a {
