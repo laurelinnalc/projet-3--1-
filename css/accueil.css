@@ -361,24 +361,24 @@ main section .card_restaurant .card_item .card_info h4 .fa-heart:hover {
 }
 @keyframes heartcolor {
   0% {
-    opacity: 0.2;
-    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 20%, rgb(255, 255, 255) 100%);
+    opacity: 0.3;
+    background-image: linear-gradient(0deg, #9356dc 10%, white 20%, #ff79da 100%);
   }
   20% {
     opacity: 0.4;
-    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 40%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(0deg, #9356dc 10%, white 40%, #ff79da 100%);
   }
   50% {
     opacity: 0.6;
-    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 60%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(0deg, #9356dc 10%, white 60%, #ff79da 100%);
   }
   70% {
     opacity: 0.8;
-    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 80%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(0deg, #9356dc 10%, white 80%, #ff79da 100%);
   }
   100% {
     opacity: 1;
-    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(0deg, #9356dc 10%, white 100%, #ff79da 100%);
   }
 }
 main section .card_restaurant .card_item .card_info p {
