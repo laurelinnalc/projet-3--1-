@@ -353,7 +353,7 @@ main section .card_restaurant .card_item .card_info h4 .fa-heart {
 }
 main section .card_restaurant .card_item .card_info h4 .fa-heart:hover {
   background-image: linear-gradient(90deg, #9356dc, #ff79da);
-  animation: heartcolor 0.4s ease;
+  animation: heartcolor 0.3s ease;
   background-clip: text;
   color: transparent;
   font-weight: bolder; /*le coeur devient violet*/
